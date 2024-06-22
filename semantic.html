@@ -24,7 +24,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 1em;
         }
         header h1 {
             display: inline-block;
@@ -85,6 +84,37 @@
             margin-top: -30px;
             border-radius: 10px;
         }
+        main section.project {
+            background-color: #222222;
+        }
+        main section.project h1 {
+            color: #f3f3f3;
+            padding: 1em;
+            text-align: center;
+            font-size: 2rem;
+        }
+        main section.project .detail {
+            display: flex;
+        }
+        main section.project .detail figure {
+            background-color: #f3f3f3;
+            margin: 1em;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        main section.project .detail figure h6 {
+            font-size: 1.5em;
+        }
+        main section.project .detail figure figcaption {
+            margin: 1em 0;
+        }
+        main section.project .detail figure a {
+            text-decoration: none;
+            background-color: #222222;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
      </style>
 </head>
 <body>
@@ -96,9 +126,9 @@
         <nav>
             <ul>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#project">Project</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Album</a></li>
-                <li><a href="#">Project</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -127,8 +157,28 @@
                 <figcaption>Medientechnologe Druck (Germany)</figcaption>
             </figure>
         </section>
-        <section class="project">
+        <section class="project" id="project">
             <h1>My Project</h1>
+            <div class="detail">            
+                <figure>
+                    <h6>Greatview GmbH Website development, <strong>Front End</strong></h6>
+                    <figcaption>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum impedit voluptatibus reprehenderit omnis facilis atque doloremque ut ea expedita quisquam!</figcaption>
+                    <a href="#">Visit it!</a>
+                </figure>           
+                <figure>
+                    <h6>Library System Smk Negeri 4 Payakumbuh, <strong>Full Stack</strong></h6>
+                    <figcaption>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos similique ab harum facere, aliquid delectus minus mollitia sapiente corrupti. Quia sed tempora consectetur facere voluptatem consequatur vitae illum. Quaerat expedita eveniet necessitatibus! Reprehenderit, ex nam molestias animi quae laboriosam provident ipsam adipisci numquam earum voluptate id consequatur quam unde soluta necessitatibus corporis facilis eum modi velit voluptatem cum suscipit nemo sit! Dolores nesciunt reiciendis nihil provident officiis.</figcaption>
+                    <a href="#">Visit it!</a>
+                </figure>           
+                <figure>
+                    <h6>Website Tourist Region Sumatera Barat, <strong>Back End</strong></h6>
+                    <figcaption>Medientechnologe Druck (Germany)</figcaption>
+                    <a href="#">Visit it!</a>
+                </figure>
+            </div>
+        </section>
+        <section class="album" id="album">
+            <h1>Album</h1>
             
         </section>
     </main>

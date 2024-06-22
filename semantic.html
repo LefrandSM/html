@@ -9,6 +9,9 @@
     <meta http-equiv="refresh" content="30">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- kit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <!-- title -->
     <title>Lefrand Septiand Maydi | Portofolio</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
@@ -83,6 +86,7 @@
             padding: 20px;
             margin-top: -30px;
             border-radius: 10px;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
         }
         main section.project {
             background-color: #222222;
@@ -115,6 +119,49 @@
             padding: 10px;
             border-radius: 5px;
         }
+        main section.album h1 {
+            padding: 1em;
+            text-align: center;
+            font-size: 2rem;
+        }
+        main section.album .fotos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            overflow: hidden;
+            padding: 0 1em;
+        }
+        main section.album .fotos img {
+            border-radius: 40px;
+            width: 30%;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+            margin: 1em;
+        }
+        main section.contact h1{
+            padding: 1em;
+            text-align: center;
+            font-size: 2rem;
+        }
+        main section.contact .sosmed {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        main section.contact .sosmed figure a {
+            text-decoration: none;
+            color: #333333;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #333333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+        footer p i {
+            color: red;
+        }
      </style>
 </head>
 <body>
@@ -127,9 +174,9 @@
             <ul>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#project">Project</a></li>
+                <li><a href="#album">Album</a></li>
                 <li><a href="#">Experience</a></li>
-                <li><a href="#">Album</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -179,8 +226,53 @@
         </section>
         <section class="album" id="album">
             <h1>Album</h1>
-            
+            <div class="fotos">
+                <img src="/images/logo.png" alt="It's a Logo">
+                <img src="/images/hero.jpg" alt="It's a Logo">
+                <img src="/images/logo.png" alt="It's a Logo">
+                <img src="/images/hero.jpg" alt="It's a Logo">
+                <img src="/images/logo.png" alt="It's a Logo">
+                <img src="/images/hero.jpg" alt="It's a Logo">
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1>My Contact</h1>
+            <div class="sosmed">   
+                <figure>
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                        <figcaption>_lefrand.sm24</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                        <figcaption>Lefrand Septiand Maydi</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#">
+                        <i class="bi bi-github"></i>
+                        <figcaption>lefrandSM</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#">
+                        <i class="bi bi-discord"></i>
+                        <figcaption>lefrand24</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#">
+                        <i class="bi bi-envelope"></i>
+                        <figcaption>lefrandseptian@gmail.com</figcaption>
+                    </a>
+                </figure>
+            </div>
         </section>
     </main>
+    <footer>
+        <p class="footer">Copyright &copy; Lefrand with <i class="bi bi-heart"></i></p>
+    </footer>
 </body>
 </html>
